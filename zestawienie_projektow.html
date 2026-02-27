@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Moje realizacje  One Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/custom.css" />
+    <!-- MOBILE MODAL -->
+<div
+  class="modal fade"
+  id="mobileModal"
+  tabindex="-1"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-sm">
+    <div class="modal-content bg-dark text-light border-0">
+      
+      <div class="modal-header border-0">
+        <h6 id="mobileModalTitle" class="modal-title"></h6>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body text-center">
+        <img id="mobileModalImage" src="" class="img-fluid rounded" alt="">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    <style>
+      body {
+        background: #0b1220;
+        color: #e5e7eb;
+        font-family: system-ui, sans-serif;
+      }
+
+      .hero {
+        padding: 5rem 0 3rem;
+        text-align: center;
+      }
+
+      .project-card {
+        background: #111827;
+        border-radius: 16px;
+        padding: 1.5rem;
+        height: 100%;
+        transition: transform 0.2s ease;
+      }
+
+      .project-card:hover {
+        transform: translateY(-4px);
+      }
+
+      .project-card img {
+        border-radius: 12px;
+        margin-bottom: 1rem;
+      }
+
+      .tech-badge {
+        background: #1f2937;
+        font-size: 0.8rem;
+        margin-right: 0.4rem;
+      }
+
+      footer {
+        padding: 3rem 0;
+        text-align: center;
+        font-size: 0.9rem;
+        color: #9ca3af;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- HERO -->
+    <section class="hero container">
+      <h1 class="fw-bold mb-3">Zrealizowane projekty</h1>
+      <p class="text-secondary">
+        Zestawienie stron typu one-page wykonanych w oparciu o HTML, CSS,
+        Bootstrap i JavaScript.
+      </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="container pb-5">
+      <div class="row g-4">
+        <!-- PROJEKT 1 -->
+        <div class="col-lg-6 mb-5">
+          <div class="project-card p-4 h-100">
+            <!-- Desktop screenshot -->
+            <img
+              src="img/rg-management-desktop.webp"
+              class="img-fluid rounded mb-4 project-main-img"
+              alt="RG Management wersja desktop"
+            />
+
+            <h5 class="fw-semibold">RG MANAGEMENT</h5>
+
+            <p class="text-secondary small mb-3">
+              Strona firmowa typu one-page dla branży finansowej, obejmująca
+              sekcje: hero, o nas, oferta oraz kontakt. Projekt z naciskiem na
+              przejrzystość treści i pełną responsywność.
+            </p>
+
+            <div class="mb-4">
+              <span class="badge tech-badge">HTML5</span>
+              <span class="badge tech-badge">CSS3</span>
+              <span class="badge tech-badge">Bootstrap 5</span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="https://syliisally.github.io/-RG-Management/"
+                target="_blank"
+                class="btn btn-outline-light btn-sm"
+              >
+                Zobacz stronę
+              </a>
+
+              <button
+                class="btn btn-outline-secondary btn-sm open-mobile"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileModal"
+                data-img="img/rg-management-mobile.webp"
+                data-title="RG MANAGEMENT wersja mobilna"
+              >
+                Wersja mobilna
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- PROJEKT 2 -->
+        <div class="col-lg-6 mb-5">
+          <div class="project-card p-4 h-100">
+            <!-- Desktop screenshot -->
+            <img
+              src="img/Alliance-Finance-desktop.webp"
+              class="img-fluid rounded mb-4 project-main-img"
+              alt="Alliance Finance wersja desktop"
+            />
+
+            <h5 class="fw-semibold">ALLIANCE FINANCE</h5>
+
+            <p class="text-secondary small mb-3">
+              Strona firmowa typu one-page prezentująca ofertę usług
+              finansowych, z wyraźnym podziałem na sekcje oraz naciskiem na
+              czytelność i responsywność na różnych urządzeniach.
+            </p>
+
+            <div class="mb-4">
+              <span class="badge tech-badge">HTML5</span>
+              <span class="badge tech-badge">CSS3</span>
+              <span class="badge tech-badge">Bootstrap 5</span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="https://a-finance.pl"
+                target="_blank"
+                class="btn btn-outline-light btn-sm"
+              >
+                Zobacz stronę
+              </a>
+
+              <button
+                class="btn btn-outline-secondary btn-sm open-mobile"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileModal"
+                data-img="img/AllianceFinance-mobile.webp"
+                data-title="ALLIANCE FINANCE  wersja mobilna"
+              >
+                Wersja mobilna
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PROJEKT 3 -->
+        <div class="col-lg-6 mb-5">
+          <div class="project-card p-4 h-100">
+            <!-- Desktop screenshot -->
+            <img
+              src="img/invdevelopment-desktop.webp"
+              class="img-fluid rounded mb-4 project-main-img"
+              alt="Projekt 3 wersja desktop"
+            />
+
+            <h5 class="fw-semibold">INVDEVELOPMENT</h5>
+
+            <p class="text-secondary small mb-3">
+               Strona firmowa typu one-page z branży nieruchomości, z sekcjami hero, oferta, o nas oraz
+              kontakt. Projekt skupiony na przejrzystej strukturze i pełnej
+              responsywności.
+            </p>
+
+            <div class="mb-4">
+              <span class="badge tech-badge">HTML5</span>
+              <span class="badge tech-badge">CSS3</span>
+              <span class="badge tech-badge">Bootstrap 5</span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="https://invdevelopment.pl"
+                target="_blank"
+                class="btn btn-outline-light btn-sm"
+              >
+                Zobacz stronę
+              </a>
+
+              <button
+                class="btn btn-outline-secondary btn-sm open-mobile"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileModal"
+                data-img="img/invdevelopment-mobile.webp"
+                data-title="INVDEVELOPMENT wersja mobilna"
+              >
+                Wersja mobilna
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PROJEKT 4 -->
+        <div class="col-lg-6 mb-5">
+          <div class="project-card p-4 h-100">
+            <!-- Desktop screenshot -->
+            <img
+              src="img/KPTKO-desktop.webp"
+              class="img-fluid rounded mb-4 project-main-img"
+              alt="KPTKO wersja desktop"
+            />
+
+            <h5 class="fw-semibold">KPTKO</h5>
+
+            <p class="text-secondary small mb-3">
+              Strona stowarzyszenia Kujawsko-Pomorskie Towarzystwo Kulturalno-Oświatowe w Bydgoszczy. 
+            </p>
+
+            <div class="mb-4">
+              <span class="badge tech-badge">HTML5</span>
+              <span class="badge tech-badge">CSS3</span>
+              <span class="badge tech-badge">Bootstrap 5</span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="https://syliisally.github.io/KPTKO"
+                target="_blank"
+                class="btn btn-outline-light btn-sm"
+              >
+                Zobacz stronę
+              </a>
+
+              <button
+                class="btn btn-outline-secondary btn-sm open-mobile"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileModal"
+                data-img="img/KPTKO-mobile.webp"
+                data-title="KPTKO wersja mobilna"F
+              >
+                Wersja mobilna
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PROJEKT 5 -->
+        <div class="col-lg-6 mb-5">
+          <div class="project-card p-4 h-100">
+            <!-- Desktop screenshot -->
+            <img
+              src="img/LOCAN-desktop.webp"
+              class="img-fluid rounded mb-4 project-main-img"
+              alt="LOCAN wersja desktop"
+            />
+
+            <h5 class="fw-semibold">LOCAN</h5>
+
+            <p class="text-secondary small mb-3">
+           Strona firmowa typu one-page z branży nieruchomości, z sekcjami hero, oferta, o nas oraz
+              kontakt. Projekt skupiony na przejrzystej strukturze i pełnej
+              responsywności.
+            </p>
+
+            <div class="mb-4">
+              <span class="badge tech-badge">HTML5</span>
+              <span class="badge tech-badge">CSS3</span>
+              <span class="badge tech-badge">Bootstrap 5</span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="https://locan.pl"
+                target="_blank"
+                class="btn btn-outline-light btn-sm"
+              >
+                Zobacz stronę
+              </a>
+
+              <button
+                class="btn btn-outline-secondary btn-sm open-mobile"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileModal"
+                data-img="img/LOCAN-mobile.webp"
+                data-title="LOCAN wersja mobilna"
+              >
+                Wersja mobilna
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PROJEKT 6 -->
+        <div class="col-lg-6 mb-5">
+          <div class="project-card p-4 h-100">
+            <!-- Desktop screenshot -->
+            <img
+              src="img/Realinv-desktop.webp"
+              class="img-fluid rounded mb-4 project-main-img"
+              alt="REALINV wersja desktop"
+            />
+
+            <h5 class="fw-semibold">REALINV</h5>
+
+            <p class="text-secondary small mb-3">
+              Strona firmowa typu one-page z sekcjami hero, oferta, o nas oraz
+              kontakt. Projekt skupiony na przejrzystej strukturze i pełnej
+              responsywności.
+            </p>
+
+            <div class="mb-4">
+              <span class="badge tech-badge">HTML5</span>
+              <span class="badge tech-badge">CSS3</span>
+              <span class="badge tech-badge">Bootstrap 5</span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="https://realinv.pl"
+                target="_blank"
+                class="btn btn-outline-light btn-sm"
+              >
+                Zobacz stronę
+              </a>
+
+              <button
+                class="btn btn-outline-secondary btn-sm open-mobile"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileModal"
+                data-img="img/REALINV-mobile.webp"
+                data-title="REALINV wersja mobilna"
+              >
+                Wersja mobilna
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- PROJEKT 7 -->
+              <div class="col-lg-6 mb-5">
+          <div class="project-card p-4 h-100">
+            <!-- Desktop screenshot -->
+            <img
+              src="img/Projekt-Wybrzeze-desktop.webp"
+              class="img-fluid rounded mb-4 project-main-img"
+              alt="PROJEKT WYBRZEŻE wersja desktop"
+            />
+
+            <h5 class="fw-semibold">PROJEKT WYBRZEŻE</h5>
+
+            <p class="text-secondary small mb-3">
+              Strona firmowa typu one-page z sekcjami hero, oferta, o nas oraz
+              kontakt. Obecnie wykorzystane zdjęcia mają charakter poglądowy. 
+              Docelowo warto zastąpić je autentycznymi fotografiami inwestycji.
+            </p>
+
+            <div class="mb-4">
+              <span class="badge tech-badge">HTML5</span>
+              <span class="badge tech-badge">CSS3</span>
+              <span class="badge tech-badge">Bootstrap 5</span>
+            </div>
+
+            <div class="d-flex gap-2 flex-wrap">
+              <a
+                href="https://syliisally.github.io/projekt_wybrzeze"
+                target="_blank"
+                class="btn btn-outline-light btn-sm"
+              >
+                Zobacz stronę
+              </a>
+
+              <button
+                class="btn btn-outline-secondary btn-sm open-mobile"
+                data-bs-toggle="modal"
+                data-bs-target="#mobileModal"
+                data-img="img/Projekt-Wybrzeze-mobile.webp"
+                data-title="PROJEKT WYBRZEŻE wersja mobilna"
+              >
+                Wersja mobilna
+              </button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script>
+      const mobileModal = document.getElementById("mobileModal");
+
+      mobileModal.addEventListener("show.bs.modal", function (event) {
+        const button = event.relatedTarget;
+        const imgSrc = button.getAttribute("data-img");
+        const title = button.getAttribute("data-title");
+
+        const modalImage = document.getElementById("mobileModalImage");
+        const modalTitle = document.getElementById("mobileModalTitle");
+
+        modalImage.src = imgSrc;
+        modalTitle.textContent = title;
+      });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
