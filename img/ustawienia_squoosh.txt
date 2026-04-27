@@ -1,0 +1,13 @@
+
+🖥️ DESKTOP (hero)
+🔧 w Squoosh ustaw:
+Width: 1600 px
+Height: auto (nie ruszaj)
+
+
+📱 MOBILE (drugi screen)
+
+Width: 500 px
+Height: auto;
+Format: WebP
+Quality: 80
